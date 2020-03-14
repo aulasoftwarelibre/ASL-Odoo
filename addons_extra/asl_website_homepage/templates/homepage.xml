@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="asl_homepage" name="ASL Homepage" inherit_id="website.homepage">
+        <xpath expr="//div[@id='wrap']" position="replace">
+            <div id="wrap" class="oe_structure oe_empty">
+            <div id="myCarousel1584181466398" class="s_carousel s_carousel_default carousel slide" data-interval="10000">
+                <ol class="carousel-indicators">
+                <li data-target="#myCarousel1584181466398" data-slide-to="0" class="active">
+                    <br/>
+                </li>
+                <li data-target="#myCarousel1584181466398" data-slide-to="1">
+                    <br/>
+                </li>
+                <li data-target="#myCarousel1584181466398" data-slide-to="2">
+                    <br/>
+                </li>
+                </ol>
+                <div class="carousel-inner">
+                <div class="carousel-item oe_custom_bg oe_img_bg pt152 pb152 active" style="background-image: url(&quot;/web/image/website.s_carousel_default_image_1&quot;);" data-name="Slide">
+                    <div class="container">
+                    <div class="row content">
+                        <div class="carousel-content col-lg-7">
+                        <div class="s_title pb8" data-name="Title">
+                            <h2 class="s_title_default">
+                            <font style="font-size: 62px;" class="o_default_snippet_text">Slide Title</font>
+                            </h2>
+                        </div>
+                        <p class="lead o_default_snippet_text">Use this snippet to presents your content in a slideshow-like format.<br/> Don't write about products or services here, write about solutions.</p>
+                        <div class="s_btn text-left pt16 pb16" data-name="Buttons">
+                            <a href="/aboutus" class="btn btn-secondary flat o_default_snippet_text">About us</a>
+                            <a href="/contactus" class="btn btn-primary flat o_default_snippet_text">Contact us</a>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <div class="carousel-item oe_custom_bg oe_img_bg pt96 pb96" style="background-image: url(&quot;/web/image/website.s_carousel_default_image_2&quot;);" data-name="Slide">
+                    <div class="container">
+                    <div class="row content">
+                        <div class="carousel-content col-lg-8 offset-lg-2 bg-black-50 text-center pt48 pb40">
+                        <h2 style="font-size: 62px;" class="o_default_snippet_text">Clever Slogan</h2>
+                        <div class="s_hr pt8 pb32">
+                            <hr class="s_hr_5px s_hr_dotted border-600 w-25 border-epsilon mx-auto text-center"/>
+                        </div>
+                        <p class="lead o_default_snippet_text">Storytelling is powerful.<br/> It draws readers in and engages them.</p>
+                        <div class="s_btn text-center pt16 pb16" data-name="Buttons">
+                            <a href="/" class="btn btn-epsilon rounded-circle o_default_snippet_text">Start your journey</a>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <div class="carousel-item oe_custom_bg oe_img_bg pt128 pb104" style="background-image: url(&quot;/web/image/website.s_carousel_default_image_3&quot;);" data-name="Slide">
+                    <div class="container">
+                    <div class="row content">
+                        <div class="carousel-content col-lg-6 offset-lg-6">
+                        <h2>
+                            <font style="font-size: 62px; background-color: rgb(255, 255, 255);" class="o_default_snippet_text">Edit this title</font>
+                        </h2>
+                        <h4>
+                            <font style="background-color: rgb(255, 255, 255);" class="o_default_snippet_text">Good writing is simple, but not simplistic.</font>
+                        </h4>
+                        <p class="mt24 o_default_snippet_text">Good copy starts with understanding how your product or service helps your customers. Simple words communicate better than big words and pompous language.</p>
+                        <div class="s_share text-left pt16 pb16">
+                            <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A12069%2F%23" class="s_share_facebook fbc-has-badge fbc-UID_1" target="_blank">
+                            <i class="fa fa-1x fa-facebook rounded shadow-sm"/>
+                            </a>
+                            <a href="https://twitter.com/intent/tweet?text=Home%20%7C%20My%20Website&amp;url=http%3A%2F%2Flocalhost%3A12069%2F%23" class="s_share_twitter" target="_blank">
+                            <i class="fa fa-1x fa-twitter rounded shadow-sm"/>
+                            </a>
+                            <a href="http://www.linkedin.com/shareArticle?mini=true&amp;url=http%3A%2F%2Flocalhost%3A12069%2F%23&amp;title=Home%20%7C%20My%20Website&amp;" class="s_share_linkedin" target="_blank">
+                            <i class="fa fa-1x fa-linkedin rounded shadow-sm"/>
+                            </a>
+                            <a href="https://plus.google.com/share?url=http%3A%2F%2Flocalhost%3A12069%2F%23" class="s_share_google" target="_blank">
+                            <i class="fa fa-1x fa-google-plus rounded shadow-sm"/>
+                            </a>
+                            <a href="mailto:?body=http%3A%2F%2Flocalhost%3A12069%2F%23&amp;subject=Home%20%7C%20My%20Website" class="s_share_email">
+                            <i class="fa fa-1x fa-envelope rounded shadow-sm"/>
+                            </a>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                </div>
+                <div class="carousel-control-prev" data-target="#myCarousel1584181466398" data-slide="prev" role="img" aria-label="Previous" title="Previous">
+                <span class="carousel-control-prev-icon"/>
+                <span class="sr-only o_default_snippet_text">Previous</span>
+                </div>
+                <div class="carousel-control-next" data-target="#myCarousel1584181466398" data-slide="next" role="img" aria-label="Next" title="Next">
+                <span class="carousel-control-next-icon"/>
+                <span class="sr-only o_default_snippet_text">Next</span>
+                </div>
+            </div>
+            <section class="s_text_image pt32 pb32">
+                <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 pt16 pb16">
+                    <h2 class="o_default_snippet_text">A Section Subtitle</h2>
+                    <p class="o_default_snippet_text">Write one or two paragraphs describing your product or services. <br/>To be successful your content needs to be useful to your readers.</p>
+                    <p class="o_default_snippet_text">Start with the customer – find out what they want and give it to them.</p>
+                    <div class="s_btn text-left pt16 pb16" data-name="Buttons">
+                        <a href="#" class="btn btn-primary o_default_snippet_text">Learn more</a>
+                    </div>
+                    </div>
+                    <div class="col-lg-6 pt16 pb16">
+                    <img src="/web/image/website.s_text_image_default_image" class="img img-fluid mx-auto" alt="Odoo • Text and Image" data-original-title="" title="" aria-describedby="tooltip147087"/>
+                    </div>
+                </div>
+                </div>
+            </section>
+            <section class="s_call_to_action bg-200 pt48 pb24">
+                <div class="container">
+                <div class="row">
+                    <div class="col-lg-9 pb24">
+                    <h3 class="elementor-heading-title elementor-size-xl">Descubre nuestras actividades</h3>
+                    <p class="lead">El Aula organiza multitud de talleres, charlas y cursos a lo largo del 
+        curso académico. Si quieres apuntarte o proponer alguna actividad visita
+        nuestro portal de actividades y participa.</p>
+                    </div>
+                    <div class="border col-lg-3 pb0 s_btn text-center pt32">
+                    <a href="https://consejo-eps.uco.es/aulasoftwarelibre/actividades/idea" class="btn btn-lg btn-success" data-original-title="" title="" aria-describedby="tooltip899068" target="_blank">Portal de Actividades&amp;nbsp;</a>
+                    <br/>
+                    </div>
+                </div>
+                </div>
+            </section>
+            <section class="s_three_columns bg-200 pt32 pb32">
+                <div class="container">
+                <div class="row d-flex align-items-stretch">
+                    <div class="col-lg-4 s_col_no_bgcolor pt16 pb16">
+                    <div class="card bg-white">
+                        <img class="card-img-top" src="/web/image/website.library_image_11" alt="Odoo - Sample 1 for three columns"/>
+                        <div class="card-body">
+                        <h3 class="card-title o_default_snippet_text">Feature One</h3>
+                        <p class="card-text o_default_snippet_text">Adapt these three columns to fit you design need. To duplicate, delete or move columns, select the column and use the top icons to perform your action.</p>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="col-lg-4 s_col_no_bgcolor pt16 pb16">
+                    <div class="card bg-white">
+                        <img class="card-img-top" src="/web/image/website.library_image_13" alt="Odoo - Sample 2 for three columns"/>
+                        <div class="card-body">
+                        <h3 class="card-title o_default_snippet_text">Feature Two</h3>
+                        <p class="card-text o_default_snippet_text">To add a fourth column, reduce the size of these three columns using the right icon of each block. Then, duplicate one of the column to create a new one as a copy.</p>
+                        </div>
+                        <div class="card-footer">
+                        <i class="fa fa-info-circle mr-1"/>
+                        <small class="o_default_snippet_text">Additional information</small>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="col-lg-4 s_col_no_bgcolor pt16 pb16">
+                    <div class="card bg-white">
+                        <img class="card-img-top" src="/web/image/website.library_image_07" alt="Odoo - Sample 3 for three columns"/>
+                        <div class="card-body">
+                        <h3 class="card-title o_default_snippet_text">Feature Three</h3>
+                        <p class="card-text o_default_snippet_text">Delete the above image or replace it with a picture that illustrates your message. Click on the picture to change it's <em class="o_default_snippet_text">rounded corner</em> style.</p>
+                        <div class="s_btn text-left pb0 pt16" data-name="Button">
+                            <a href="#" class="btn btn-primary btn-sm o_default_snippet_text">Learn more</a>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                </div>
+            </section>
+            <section class="s_call_to_action bg-200 pt48 pb24">
+                <div class="container">
+                <div class="row">
+                    <div class="col-lg-9 pb24">
+                    <h3 class="o_default_snippet_text"><b class="o_default_snippet_text">50,000+ companies</b> run Odoo to grow their businesses.</h3>
+                    <p class="lead o_default_snippet_text">Join us and make your company a better place.</p>
+                    </div>
+                </div>
+                </div>
+            </section>
+            </div>		    
+        </xpath>
+    </template>
+</odoo>

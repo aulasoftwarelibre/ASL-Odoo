@@ -1,0 +1,29 @@
+version: '3.4'
+
+services:
+  db:
+    image: postgres:10
+    environment:
+      POSTGRES_PASSWORD: odoo 
+      POSTGRES_USER: odoo
+      POSTGRES_DB: postgres
+    volumes:
+      - ./db-data:/var/lib/postgresql/data
+    ports:
+      - 12432:5432
+
+  odoo:
+    depends_on:
+      - db
+    image: odoo_asl:12
+    container_name: asl_12_container
+    environment:
+       ODOO_RC: "/odoo/odoo-server.conf"
+       PYTHONIOENCODING: "UTF-8"
+    ports:
+      - 12069:8069
+    volumes:
+      -  ./odoo.conf:/odoo/odoo-server.conf
+      -  ./logs:/var/log/odoo
+      -  ./addons_extra:/odoo/addons_extra
+      -  ./filestore:/home/odoo/.local/share
