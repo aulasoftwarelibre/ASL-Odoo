@@ -1,0 +1,4 @@
+PyYAML==3.12 ; python_version < '3.7'
+PyYAML==3.13 ; python_version >= '3.7'
+num2words
+phonenumbers

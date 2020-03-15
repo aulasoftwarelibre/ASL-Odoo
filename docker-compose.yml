@@ -1,29 +1,40 @@
-version: '3.4'
+version: "3.4"
 
 services:
   db:
     image: postgres:10
     environment:
-      POSTGRES_PASSWORD: odoo 
+      POSTGRES_PASSWORD: odoo
       POSTGRES_USER: odoo
       POSTGRES_DB: postgres
     volumes:
-      - ./db-data:/var/lib/postgresql/data
-    ports:
-      - 12432:5432
+      - db-data:/var/lib/postgresql/data
 
   odoo:
     depends_on:
       - db
-    image: odoo_asl:12
-    container_name: asl_12_container
+    image: odoo_asl_lite:12
+    build:
+      context: "."
     environment:
-       ODOO_RC: "/odoo/odoo-server.conf"
-       PYTHONIOENCODING: "UTF-8"
-    ports:
-      - 12069:8069
+      PYTHONIOENCODING: UTF-8
+      HOST: db
+      USER: odoo
+      PASSWORD: myodoo
     volumes:
-      -  ./odoo.conf:/odoo/odoo-server.conf
-      -  ./logs:/var/log/odoo
-      -  ./addons_extra:/odoo/addons_extra
-      -  ./filestore:/home/odoo/.local/share
+      - odoo-data:/data
+      - /etc/localtime:/etc/localtime:ro
+      - ./addons_extra:/opt/addons_extra:ro
+      - ./odoo.conf.local:/etc/odoo/odoo.conf:ro
+
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.odoo-asl.rule=Host(`odoo.developer.localhost`)"
+      - "traefik.http.routers.odoo-asl.entrypoints=web-secure"
+      - "traefik.http.routers.odoo-asl.tls=true"
+
+volumes:
+  db-data:
+    driver: local
+  odoo-data:
+    driver: local
