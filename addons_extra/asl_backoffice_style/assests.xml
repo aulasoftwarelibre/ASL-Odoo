@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+		<template id="assets_backend" name="ASL Backend Theme" inherit_id="web.assets_backend">
+		<xpath expr=".">
+                <link rel="stylesheet" href="/asl_backoffice_style/static/src/css/style.css"/>
+			</xpath>
+		</template>
+    </data>
+</odoo>

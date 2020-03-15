@@ -1,0 +1,81 @@
+
+.o_main_navbar{
+    border-bottom: 1px solid #336699;
+    background-color:#336699;
+}
+
+.o_main_navbar > ul > li > a:hover, 
+.o_main_navbar > ul > li > label:hover{
+    background-color:#27588a;
+}
+
+.o_main_navbar > a:hover, .o_main_navbar > button:hover {
+    background-color:#27588a;
+}
+
+
+.btn-primary {
+    background-color:#336699;
+    border-color:#336699;
+}
+
+.btn-primary:hover {
+    background-color:#27588a;
+    border-color:#27588a;
+}
+
+.o_dashboards .o_website_dashboard div.o_box h2, 
+.o_dashboards .o_website_dashboard div.o_box h4 {
+    color:#336699;
+}
+
+a {
+    color:#336699;
+}
+
+a:hover {
+    color: #27588a;
+}
+
+
+.o_main_navbar .show .dropdown-toggle {
+    background-color:#336699;
+}
+
+.o_tooltip {
+    border: 2px solid #336699;
+    background-color:#336699;
+    box-shadow: 0 2px 2px 1px #336699;
+}
+
+.o_required_modifier .o_input {
+    background-color: #4074a8 !important;
+}
+
+.btn-link, .btn-link:hover{
+    color: #336699;
+}
+
+.o_form_view .o_form_uri:hover {
+    color: #27588a;
+}
+.o_form_view .o_form_uri {
+    color: #336699;
+}
+
+.o_form_view .oe_button_box .oe_stat_button .o_button_icon {
+    color: #336699;
+}
+
+.btn-primary.disabled, .btn-primary:disabled {
+    background-color: #336699;
+    border-color: #336699;
+    border-left-color: #336699;
+}
+
+.o_searchview .o_searchview_facet .o_searchview_facet_label {
+    background-color: #336699;
+}
+.o_mail_discuss .o_mail_discuss_sidebar .o_mail_discuss_item.o_active {
+    box-shadow: inset 3px 0 0 #336699;
+}
