@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <record id="provider_uco" model="auth.oauth.provider">
+            <field name="name">UCO provider</field>
+            <field name="auth_endpoint">https://identidad.uco.es/simplesaml/module.php/oidc/authorize.php</field>
+            <field name="scope">openid</field>
+            <field name="validation_endpoint">https://identidad.uco.es/simplesaml/module.php/oidc/userinfo.php</field>
+            <field name="css_class">fa fa-university</field>
+            <field name="body">Log in with UCO account</field>
+        </record>
+    </data>
+</odoo>
