@@ -24,7 +24,6 @@ services:
     volumes:
       - odoo-data:/data
       - /etc/localtime:/etc/localtime:ro
-      - ./addons_extra:/opt/addons_extra:ro
       - ./odoo.conf.local:/etc/odoo/odoo.conf:ro
 
     labels:

@@ -53,8 +53,8 @@ COPY ./wait-for-psql.py /usr/local/bin/wait-for-psql.py
 COPY ./odoo.conf /etc/odoo/
 
 RUN mkdir -p /odoo /data /opt/addons_extra \
-    && chown -R odoo:odoo /etc/odoo/odoo.conf /odoo /data /opt/addons_extra
-VOLUME [ "/data", "/opt/addons_extra" ]
+    && chown -R odoo:odoo /odoo /data /opt/addons_extra
+VOLUME [ "/data" ]
 
 # Copy python dependencies from base
 COPY --from=base ${VIRTUAL_ENV} ${VIRTUAL_ENV}
@@ -63,6 +63,8 @@ COPY --from=base ${VIRTUAL_ENV} ${VIRTUAL_ENV}
 USER odoo
 
 RUN git clone --depth=1 --single-branch --branch=$ODOO_VERSION https://github.com/odoo/odoo.git /odoo/
+
+COPY ./addons_extra /opt/addons_extra
 
 EXPOSE 8069
 
