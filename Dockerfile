@@ -59,6 +59,9 @@ VOLUME [ "/data" ]
 # Copy python dependencies from base
 COPY --from=base ${VIRTUAL_ENV} ${VIRTUAL_ENV}
 
+# Fix temporal issue (to be removed ASAP)
+RUN sed -e :a -e '$d;N;2,3ba' -e 'P;D' -i /etc/ssl/openssl.cnf 
+
 # Set default user when running the container
 USER odoo
 

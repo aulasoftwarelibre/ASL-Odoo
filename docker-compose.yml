@@ -13,7 +13,7 @@ services:
   odoo:
     depends_on:
       - db
-    image: odoo_asl_lite:12
+    image: aulasoftwarelibre/asl-odoo:latest
     build:
       context: "."
     environment:
